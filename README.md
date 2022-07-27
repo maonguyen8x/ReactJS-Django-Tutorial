@@ -17,7 +17,7 @@
 
 ## Frontend
     1. cd app folder. Then run: django-admin startapp frontend
-    2. Go to frontend folder. Create static, templates, static folder.
+    2. Go to frontend folder. Create static, templates, inside templates -> create new frontend.
     3. npm init -y
     4. npm i webpack webpack-cli --save-dev
     5. npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
