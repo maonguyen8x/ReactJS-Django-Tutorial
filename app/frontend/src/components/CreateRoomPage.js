@@ -130,6 +130,7 @@ export default class CreateRoomPage extends Component {
                     <Collapse in={this.state.errorMsg != "" || this.state.successMsg != ""}>
                         {this.state.successMsg != "" ? (
                             <Alert
+                                variant="filled"
                                 severity="success"
                                 onClose={() => { this.setState({ successMsg: "" }) }}>
                                 {this.state.successMsg}
