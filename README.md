@@ -7,16 +7,16 @@
 ## How to install on Ubuntu:
 
 - Install Python3.9:
-  1. sudo apt update
-  2. sudo apt install software-properties-common
-  3. sudo add-apt-repository ppa:deadsnakes/ppa
-  4. sudo apt install python3.9
-  5. python3.9 --version
+  - sudo apt update
+  - sudo apt install software-properties-common
+  - sudo add-apt-repository ppa:deadsnakes/ppa
+  - sudo apt install python3.9
+  - python3.9 --version
 - Install pip:
-  1. sudo apt-get install python3.9-venv
-  2. python3.9 -m venv venv
-  3. source venv/bin/activate
-  4. pip --version
+  - sudo apt-get install python3.9-venv
+  - python3.9 -m venv venv
+  - source venv/bin/activate
+  - pip --version
 
 ## How to install Django3.0
 
