@@ -29,3 +29,9 @@
     11. Create & config babel.config.json file
     13. Create & config webpack.config.js file
     12. npm run dev
+
+## Spotify
+    1. django-admin startapp spotify
+    2. Make a credentials.py, urls.py, util.py
+    3. Config more in app/setting: spotify.apps.SpotifyConfig
+    4. pip install requests

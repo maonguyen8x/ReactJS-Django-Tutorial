@@ -8,7 +8,7 @@ from .util import is_spotify_authenticated, update_or_create_user_tokens
 
 
 class AuthURL(APIView):
-    def get(self, request, format=None):
+    def get(self, request):
         scopes = 'user-read-playback-state user-modify-playback-state user-read-currently-playing'
         url = Request('GET', 'https://accounts.spotify.com/authorize', params={
             'scope': scopes,
