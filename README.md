@@ -61,3 +61,11 @@
     2. Make a credentials.py, urls.py, util.py
     3. Config more in app/setting: spotify.apps.SpotifyConfig
     4. pip install requests
+
+## Code quality
+
+    1. mypy: python -m pip install mypy==0.931
+    2. black: python -m pip install black==22.1.0
+    3. isort: python -m pip install isort==5.10.1
+    4. flake8: python -m pip install flake8==4.0.1
+    5. Celery: pip install -U Celery
