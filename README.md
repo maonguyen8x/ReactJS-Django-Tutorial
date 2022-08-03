@@ -12,9 +12,9 @@
   - sudo add-apt-repository ppa:deadsnakes/ppa
   - sudo apt install python3.9
   - python3.9 --version
-- Install pip:
+- Install venv:
   - sudo apt-get install python3.9-venv
-  - python3.9 -m venv venv
+  - python3.9 -m venv my_venv
   - source venv/bin/activate
   - pip --version
 

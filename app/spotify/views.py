@@ -67,6 +67,8 @@ class CurrentSong(APIView):
         host = room.host
         endpoint = "player/currently-playing"
         response = execute_spotify_api_request(host, endpoint)
-        print(response)
+
+        if 'error' in response or 'item' not in response:
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
 
         return Response(response, status=status.HTTP_200_OK)
