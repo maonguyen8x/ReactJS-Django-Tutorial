@@ -9,6 +9,7 @@ import {
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import PauseIcon from "@material-ui/icons/Pause";
 import SkipNextIcon from "@material-ui/icons/SkipNext";
+
 export default class MusicPlayer extends Component {
     constructor(props) {
         super(props);
