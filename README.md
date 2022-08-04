@@ -14,25 +14,34 @@
   - python3.9 --version
 - Install venv:
   - sudo apt-get install python3.9-venv
-  - python3.9 -m venv my_venv
-  - source venv/bin/activate
+  - python -m venv my_venv (python3.9)
+  - source my_venv/Scripts/activate or source env/bin/active
   - pip --version
 
-## How to install Django3.0
+## How to install package:
 
     - pip install Django==3.0
+    - pip install pymysql
+    - pipx install poetry
+    - pip install requests
+    - pip install python-dotenv
+    - pip install poetry
 
 ## How to setup:
 
     1. django-admin startproject app
     2. django-admin startapp api
-    3. pip install pymysql
 
 ## Backend
 
     1. python3 manage.py makemigrations
     2. python3 manage.py migrate
     3. python3 manage.py runserver
+
+## Frontend
+
+    1. app/frontend: npm rebuild
+    2. app/frontend:  npm run dev
 
 ## Config app/settings.py
 
@@ -60,7 +69,6 @@
     1. django-admin startapp spotify
     2. Make a credentials.py, urls.py, util.py
     3. Config more in app/setting: spotify.apps.SpotifyConfig
-    4. pip install requests
 
 ## Code quality
 
@@ -87,11 +95,12 @@
 
 ## .gitignore
 
-    git rm -r --cached .
+    1. Make a .gitignore file
+    2. run: git rm -r --cached .
 
 ## Installation Flow
 
 ```bash
-poetry install / pip install peotry / poetry install --no-dev
-
+    - Linux: poetry install / pip install peotry / poetry install --no-dev
+    - Windows: curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
