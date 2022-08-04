@@ -2,9 +2,22 @@ import os
 
 import pymysql
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+AUTH_HEADER_TYPES = ("Bearer",)
+
+ALLOWED_HOSTS = ["*"]
+
+ENV_FILE = os.getenv("USE_ENV_FILE", ".env")
+
+if ENV_FILE and len(ENV_FILE) > 0:
+    load_dotenv(os.path.join(BASE_DIR, ENV_FILE), verbose=True)
+else:
+    load_dotenv(verbose=True)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -71,9 +84,11 @@ pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'demo',
-        'USER': 'root',
-        'PASSWORD': 'root',
+        "HOST": os.getenv("DB_HOST"),
+        # "PORT": os.getenv("DB_PORT"),
+        'NAME': os.getenv("DB_NAME"),
+        'USER': os.getenv("DB_USER"),
+        'PASSWORD': os.getenv("DB_PASSWORD"),
     }
 }
 

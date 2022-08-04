@@ -70,6 +70,28 @@
     4. flake8: python -m pip install flake8==4.0.1
     5. Celery: pip install -U Celery
 
+## setting env
+
+- copy .env.sample -> .env
+- change variable env
+
+### env connect to mysql db
+
+```dotenv
+    DB_HOST=
+    DB_PORT=
+    DB_NAME=
+    DB_USER=
+    DB_PASSWORD=
+```
+
 ## .gitignore
 
     git rm -r --cached .
+
+## Installation Flow
+
+```bash
+poetry install / pip install peotry / poetry install --no-dev
+
+```
