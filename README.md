@@ -69,3 +69,7 @@
     3. isort: python -m pip install isort==5.10.1
     4. flake8: python -m pip install flake8==4.0.1
     5. Celery: pip install -U Celery
+
+## .gitignore
+
+    git rm -r --cached .
