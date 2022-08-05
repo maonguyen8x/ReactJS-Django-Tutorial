@@ -10,7 +10,7 @@ from api.models import Room
 
 
 class AuthURL(APIView):
-    def get(self, request):
+    def get(self, request, format=None):
         scopes = 'user-read-playback-state user-modify-playback-state user-read-currently-playing'
         url = Request('GET', 'https://accounts.spotify.com/authorize', params={
             'scope': scopes,

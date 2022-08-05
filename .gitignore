@@ -1,0 +1,15 @@
+/dataSources/
+/dataSources.local.xml
+/app/spotify/migrations/*
+/app/spotify/__pycache__/
+/app/app/__pycache__
+/app/api/migrations
+/app/api/__pycache__/
+/*/*/node_modules/
+/app/frontend/__pycache__/
+/app/frontend/migrations/*
+/app/api/__pycache__/*__
+.gitignore
+venv/
+.env
+.idea
