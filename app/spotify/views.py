@@ -10,7 +10,7 @@ from api.models import Room
 
 
 class AuthURL(APIView):
-    def get(self, request):
+    def get(self, request, format=None):
         scopes = 'user-read-playback-state user-modify-playback-state user-read-currently-playing'
         url = Request('GET', 'https://accounts.spotify.com/authorize', params={
             'scope': scopes,
@@ -86,15 +86,15 @@ class CurrentSong(APIView):
             name = artist.get('name')
             artist_string += name
 
-        song = {
-            'title': item.get('name'),
-            'artist': artist_string,
-            'duration': duration,
-            'time': progress,
-            'image_url': album_cover,
-            'is_playing': is_playing,
-            'votes': 0,
-            'id': song_id
-        }
+            song = {
+                'title': item.get('name'),
+                'artist': artist_string,
+                'duration': duration,
+                'time': progress,
+                'image_url': album_cover,
+                'is_playing': is_playing,
+                'votes': 0,
+                'id': song_id
+            }
 
         return Response(song, status=status.HTTP_200_OK)
