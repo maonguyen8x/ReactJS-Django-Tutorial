@@ -9,7 +9,7 @@
 /app/frontend/__pycache__/
 /app/frontend/migrations/*
 /app/api/__pycache__/*__
-.gitignore
 venv/
+my_venv
 .env
 .idea
